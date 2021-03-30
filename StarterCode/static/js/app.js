@@ -4,9 +4,9 @@ var tableData = data;
 // create a double forEach statement to append the data into a table
 function buildTable(data) {
     d3.select("tbody").html("");
-    data.forEach((selection) => {
+    data.forEach((incident) => {
         var tableRow = d3.select("tbody").append("tr");
-        Object.values(selection).forEach((value) => {
+        Object.values(incident).forEach((value) => {
             var tableData = tableRow.append("td");
             tableData.text(value);
         });
