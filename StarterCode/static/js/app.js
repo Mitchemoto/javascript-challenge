@@ -25,7 +25,7 @@ function clickFilter() {
     if (date) {
         filterDateTime = filterDateTime.filter((row) => row.datetime === date);
     }
-    appendTable(filterDateTime);
+    buildTable(filterDateTime);
 }
 
 d3.selectAll("#filter-btn").on("click", clickFilter);
